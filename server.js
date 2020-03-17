@@ -1,4 +1,5 @@
-
+// Dependencies
+// =============================================================
 var express = require("express");
 var path = require("path");
 
@@ -10,8 +11,7 @@ const PORT = process.env.PORT || 3000;
 // Sets up the Express app to handle data parsing
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use(express.static('/assets/css/style.css')); 
-app.use(express.static('/assets/css/images')); 
+
 // Star Wars Characters (DATA)
 // =============================================================
 var characters = [
